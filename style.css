@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-family: 'Open Sans', sans-serif;
@@ -7,9 +9,11 @@ body {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    background: #CCCCCC;;
 }
 .wrapper {
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
     width: 100%;
     margin: 0 auto;
 }
@@ -34,11 +38,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.header_logo {
+.logo {
     display: flex;
     align-items: center;
 }
-.header_logo-title {
+.logo-title {
     font-size: 32px;
     text-transform: uppercase;
     font-weight: 400;
@@ -49,27 +53,25 @@ body {
     display: flex;
     align-items: center;
 }
-.header_nav {
+.nav {
     display: flex;
     align-items: center;
-}
-.header_nav {
     list-style: none;
     padding: 0;
 }
-.header_nav-item {
+.nav-item {
     margin-right: 65px;
 }
-.header_nav-item:last-child {
+.nav-item:last-child {
     margin-right: 0;
 }
-.header_nav_link {
+.nav_link {
     text-decoration: none;
     color: inherit;
     font-size: 23px;
     position: relative;
 }
-.header_nav_link.under-line::before {
+.nav_link.under-line::before {
     content: '';
     position: absolute;
     display: block;
@@ -80,14 +82,14 @@ body {
     background: #F7F7F7;
     transition: width .2s linear;
 }
-.header_nav_link.under-line:hover::before {
+.nav_link.under-line:hover::before {
     width: 100%;
 }
-.header_nav_link img {
+.nav_link img {
     transform: scale(1);
     transition: transform .2s linear;
 }
-.header_nav_link img:hover {
+.nav_link img:hover {
     transform: scale(1.5);
 }
 .header_btn {
@@ -141,4 +143,142 @@ body {
 }
 .btn:hover {
     background: #E39128;
+}
+.latest_articles {
+    padding: 127px 0 240px;
+}
+.l_a_title {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    margin: 0 0 33px 0;
+}
+.l_a_content {
+    font-size: 24px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 126px;
+}
+.photos_inner {
+    display: flex;
+    justify-content: space-around;
+}
+.photo_inner-item {
+    position: relative;
+    width: 300px;
+    height: 360px;
+    overflow: hidden;
+}
+.photo_about {
+    position: absolute;
+    bottom: 46px;
+    left: 0;
+    width: 100%;
+}
+.photo_about h4 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+.photo_about p {
+    font-size: 17px;
+    text-align: center;
+}
+.get_notified {
+    padding-bottom: 240px;
+}
+.get_notified-tittle {
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    margin:0 0 65px;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+#email {
+    background-color: transparent;
+    border: solid 1px #666666;
+    width: 540px;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    color: #666666;
+    padding-left: 15px;
+    letter-spacing: 1px;
+    outline: none;
+}
+#send {
+    width: 120px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F7F7F7;
+    background: #CD6326;
+    outline: none;
+    border: 1px solid #CD6326;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .2s linear;
+}
+#send:hover {
+    background: #E39128;
+}
+footer {
+    background: url("img/bg_footer.jpg") center center no-repeat;
+    background-size: cover;
+    height: 360px;
+}
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 360px;
+}
+.nav-item-footer {
+    margin-right: 85px;
+}
+.footer_social {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.footer_social-item {
+    margin-left: 27px;
+}
+.footer_social-item:first-child {
+    margin: 0;
+}
+.social-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: transform .2s linear;
+}
+.social-link[href*="facebook"] {
+    background: #F7F7F7 url('img/facebook.svg') center center no-repeat;
+}
+.social-link[href*="insta"] {
+    background: #F7F7F7 url('img/insta.svg') center center no-repeat;
+}
+.social-link[href*="pinterest"] {
+    background: #F7F7F7 url('img/pinterest.svg') center center no-repeat;
+}
+.social-link[href*="telegram"] {
+    background: #F7F7F7 url('img/telegram.svg') center center no-repeat;
+}
+.social-link:hover {
+    transform: scale(1.3);
 }
