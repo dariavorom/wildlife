@@ -123,11 +123,7 @@ body {
     line-height: 27px;
     margin-bottom: 49px;
 }
-.btn_survival {
-    width: 160px;
-    height: 60px;
-}
-.btn {
+.btn_survival{
     font-family: 'Roboto', sans-serif;
     font-size: 23px;
     color: inherit;
@@ -140,9 +136,14 @@ body {
     background: #CD6326;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transition: background .2s linear;
+    width: 160px;
+    height: 60px;
 }
 .btn:hover {
     background: #E39128;
+}
+.btn:active {
+    background: #8F5613;
 }
 .latest_articles {
     padding: 127px 0 240px;
@@ -163,6 +164,7 @@ body {
 .photos_inner {
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 .photo_inner-item {
     position: relative;
@@ -185,6 +187,13 @@ body {
 .photo_about p {
     font-size: 17px;
     text-align: center;
+}
+.arrow img {
+    position: absolute;
+    top: calc(50% - 19px);
+}
+.arrow_prev {
+    left: 0;
 }
 .get_notified {
     padding-bottom: 240px;
@@ -233,6 +242,9 @@ form {
 }
 #send:hover {
     background: #E39128;
+}
+#send:active {
+    background: #8F5613;
 }
 footer {
     background: url("img/bg_footer.jpg") center center no-repeat;
