@@ -188,7 +188,7 @@ body {
     font-size: 17px;
     text-align: center;
 }
-.arrow img {
+.arrow_prev,.arrow_next {
     position: absolute;
     top: calc(50% - 19px);
 }
